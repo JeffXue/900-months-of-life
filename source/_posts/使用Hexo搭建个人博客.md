@@ -1,6 +1,7 @@
 ---
 title: 使用Hexo搭建个人博客
 date: 2016-01-03 17:37:18
+updated: 2016-01-28 00:07:12 
 categories: 教程
 tags: 
 - Hexo
@@ -71,11 +72,11 @@ branch | master
 安装之后需要把～/.nvm/versions/node/v4.2.4/bin添加到PATH中，否则后续无法调用到hexo命令
 主要的命令：
 
-- `hexo init [folder]`
-- `hexo new [layout] <title>`
-- `hexo generate`
-- `hexo publish [layout] <filename>`
-- `hexo server`
-- `hexo deploy`
-- `hexo --debug`
-- `hexo --draft`
+- `hexo init [folder]` 新建一个网站
+- `hexo new [layout] <title>` 新建一篇文章,layout：post,draft,page
+- `hexo generate` 生成静态文件
+- `hexo publish [layout] <filename>` 发布草稿
+- `hexo server` 启动服务器
+- `hexo deploy` 部署网站
+- `hexo --debug` 调试模式
+- `hexo --draft` 显示草稿
