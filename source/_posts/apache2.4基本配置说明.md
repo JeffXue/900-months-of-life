@@ -5,7 +5,8 @@ categories: 运维
 tags: apache
 ---
 
-#httpd.conf
+# httpd.conf
+
 ```
 # httpd HOME目录
 ServerRoot "/usr/local/apache"
@@ -201,7 +202,8 @@ RequestHeader unset DNT env=bad_DNT
 </IfModule>
 ```
 
-#extra/httpd-vhosts.conf
+# extra/httpd-vhosts.conf
+
 若需要使用代理，需要在httpd.conf中开启代理模块
 ```
 LoadModule proxy_module modules/mod_proxy.so
@@ -246,7 +248,8 @@ httpd-vhosts.conf
 </VirtualHost>
 ```
 
-#extra/httpd-ssl.conf
+# extra/httpd-ssl.conf
+
 若需要启动ssl，需要修改httpd.conf配置
 ```
 LoadModule slotmem_shm_module modules/mod_slotmem_shm.so
@@ -327,7 +330,8 @@ ProxyPassReverse / http://127.0.0.1:8080/
 </VirtualHost>
 ```
 
-#extra/httpd-mpm.conf
+# extra/httpd-mpm.conf
+
 详细可参考：https://httpd.apache.org/docs/2.4/mod/mpm_common.html
 ```
 <IfModule !mpm_netware_module>
@@ -412,7 +416,8 @@ ProxyPassReverse / http://127.0.0.1:8080/
 
 ```
 
-#extra/httpd-info.conf
+# extra/httpd-info.conf
+
 需要在httpd.conf启动info模块才能查看info信息
 ```
 LoadModule info_module modules/mod_info.so
