@@ -65,7 +65,7 @@ make && make install
 ```
 tar xvzf httpd-2.4.3.tar.gz -C /usr/local/
 cd /usr/local/httpd-2.4.3
-./configure --prefix=/usr/local/apache  --enable-mods-shared=all --enable-ssl --enable-proxy-http --enable-expires -enable-deflate --enable-dav --with-apr=/usr/local/apr --with-apr-util=/usr/local/apr-util --with-z=/usr/local/zlib --with-pcre=/usr/local/pcre --with-ssl=/usr/local/openssl --with-mpm=event
+./configure --prefix=/usr/local/apache  --enable-mods-shared=all --enable-ssl --enable-proxy-http --enable-expires --enable-deflate --enable-dav --with-apr=/usr/local/apr --with-apr-util=/usr/local/apr-util --with-z=/usr/local/zlib --with-pcre=/usr/local/pcre --with-ssl=/usr/local/openssl --with-mpm=event
 make && make install
 ```
 
