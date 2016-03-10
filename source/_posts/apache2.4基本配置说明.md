@@ -17,6 +17,7 @@ ServerName localhost
 Listen 80
 
 # 默认启用的模块，注释的为较为重要的一些模块，后续会需要使用时开启
+# 详细模块说明：https://httpd.apache.org/docs/2.4/mod/
 LoadModule authn_file_module modules/mod_authn_file.so
 LoadModule authn_core_module modules/mod_authn_core.so
 LoadModule authz_host_module modules/mod_authz_host.so
@@ -434,6 +435,10 @@ httpd-info.conf
 </Location>
 
 # 开启额外状态
+# 开启后对性能会有所影响
+# 每个请求均会调度两次gettimeofday(2)/times(2)和多次额外的time(2)
+# 上述调度为了在status report中包含了消耗时间
+# 为了得到更高的性能，应设置为off
 #ExtendedStatus On
 
 <Location /server-info>
