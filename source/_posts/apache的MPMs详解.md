@@ -131,7 +131,7 @@ MPM认为底层的apr_pollset实现是合理的线程安全。这使得MPM避免
 - NetBSD 2.0 以上
 - Linux 推荐2.6 kernel，同样需保证glibc支持EPoll
 
-####　AsyncRequestWorkerFactor指令
+#### AsyncRequestWorkerFactor指令
 
 该指令只在2.3.13以上版本有效（AsyncRequestWorkerFactor 默认值为2）。
 
