@@ -332,8 +332,7 @@ ProxyPassReverse / http://127.0.0.1:8080/
 ```
 
 # extra/httpd-mpm.conf
-
-详细可参考：https://httpd.apache.org/docs/2.4/mod/mpm_common.html
+详细可参考：[apache的MPMs详解](http://www.jeffxue.cn/2016/03/10/apache%E7%9A%84MPMs%E8%AF%A6%E8%A7%A3/)
 ```
 <IfModule !mpm_netware_module>
     PidFile "logs/httpd.pid"
@@ -373,8 +372,6 @@ ProxyPassReverse / http://127.0.0.1:8080/
 <IfModule mpm_event_module>
     # 启动进程数量
     StartServers             3
-    # 最大进程数量， ThreadsPerChild*ServerLimit应为MaxRequestWorkers的整数倍
-    ServerLimit               16
     # 最小空闲线程数量
     MinSpareThreads         75
     # 最大空闲线程数量
