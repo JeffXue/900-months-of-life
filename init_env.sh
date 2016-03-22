@@ -8,5 +8,5 @@ npm install
 
 hexo_path=`pwd`
 
-echo "PATH=$hexo_path/node_modules/hexo/bin:$PATH" >> ~/.bash_profile
+echo "PATH=$hexo_path/node_modules/hexo/bin:\$PATH" >> ~/.bash_profile
 source ~/.bash_profile
