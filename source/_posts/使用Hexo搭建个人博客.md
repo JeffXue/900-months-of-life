@@ -1,11 +1,10 @@
 ---
 title: 使用Hexo搭建个人博客
 date: 2016-01-03 17:37:18
-updated: 2016-01-28 00:07:12 
 categories: 运维
 tags: 
-- hexo
-- blog
+- Hexo
+- Blog
 ---
 
 ## 部署Hexo

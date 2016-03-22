@@ -2,7 +2,7 @@
 title: apache使用mod_deflate模块
 date: 2016-03-08 18:27:10
 categories: 运维
-tags: apache
+tags: Apache
 ---
 
 # mod_deflate模块

@@ -1,9 +1,8 @@
 ---
 title: nginx1.8编译安装
 tags:
-  - nginx
-date: 2016-03-22 12:01:33
-updated: 2016-03-22 15:01:33
+  - Nginx
+date: 2016-03-22 15:01:33
 categories: 运维
 ---
 # 概述
@@ -20,7 +19,7 @@ make && make install
 --with-http_ssl_module #支持ssl
 --with-http_stub_status_module #支持status
 --with-http_gzip_static_module #支持gzip
---with-http_realip_module #用于获取使用代理之后的真实IP，如CDN等
+--with-http_realip_module #允许从请求标头更改客户端的IP地址值
 --with-pcre=/usr/local/pcre-8.10 #设置pcre源目录
 --with-openssl=/usr/local/openssl-1.0.1p #设置openssl源目录
 --with-zlib=/usr/local/zlib-1.2.7 #设置zlib源目录

@@ -1,9 +1,8 @@
 ---
 title: apache使用mod_rewrite模块
 date: 2016-03-10 15:54:06
-updated: 2016-03-10 15:54:06
 categories: 运维
-tags: apache
+tags: Apache
 ---
 
 # mod_rewrite
