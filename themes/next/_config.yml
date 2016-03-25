@@ -3,7 +3,7 @@
 # ---------------------------------------------------------------
 
 # Place your favicon.ico to /source directory.
-favicon: /favicon.ico
+favicon: img/favicon.ico
 
 # Set default keywords (Use a comma to separate)
 keywords: "Hexo, NexT"
@@ -57,7 +57,7 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-#scheme: Mist
+scheme: Mist
 
 
 
@@ -72,7 +72,7 @@ menu_icons:
 #  - hide    expand only when click on the sidebar toggle icon.
 #  - remove  Totally remove sidebar including sidebar toggle icon.
 sidebar: post
-#sidebar: always
+#saidebar: always
 #sidebar: hide
 #sidebar: remove
 
@@ -93,12 +93,7 @@ social_icons:
 
 
 # Sidebar Avatar
-avatar: /uploads/avatar.png
-
-# Social links
-# social:
-  #GitHub:
-  #Others:
+avatar: /img/avatar.png
 
 
 # TOC in the Sidebar
@@ -183,7 +178,7 @@ duoshuo_share: true
 
 
 # Google Analytics
-#google_analytics:
+google_analytics: UA-75597091-1
 
 
 # Make duoshuo show UA
