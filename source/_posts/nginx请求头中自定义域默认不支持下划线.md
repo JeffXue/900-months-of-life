@@ -5,7 +5,7 @@ tags:
 date: 2016-03-29 16:50:02
 categories: 运维
 ---
-生产环境更换nginx之后，sdk发起的请求返回了一个内部定义的401错误，导致用户投诉，跟踪后发现请求中缺失了部分域内容access_token，最终发现nginx会屏蔽掉不合法的请求头，而默认情况下请求中中是不支持下划线的。
+生产环境更换nginx之后，sdk发起的请求返回了一个内部定义的401错误，导致用户投诉，跟踪后发现请求中缺失了部分域内容access_token，最终发现nginx会屏蔽掉不合法的请求头，而默认情况下请求头是不支持下划线的。
 
 可以通过使用underscores_in_headers指令开启支持下划线：
 >Syntax:    underscores_in_headers on | off;
