@@ -3,7 +3,7 @@ title: tomcat6和tomcat7性能对比
 tags:
   - tomcat
 date: 2016-04-18 23:43:44
-categories: 运维
+categories: 性能测试
 ---
 
 # 静态页面
