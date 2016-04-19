@@ -1,5 +1,5 @@
 ---
-title: tomcat7安装配置
+title: tomcat7安装配置详细说明
 tags:
   - tomcat7
 date: 2016-04-18 20:06:21
@@ -90,7 +90,7 @@ controlRole readwrite
 jmxremote.password添加以下内容：
 ```
 monitorRole tomcat
-controlRoletomcat
+controlRole tomcat
 ```
 Tip：The password file should be read-only and only accessible by the operating system user Tomcat is running as
 

@@ -16,6 +16,8 @@ Features of the APR connector:
 - Uses OpenSSL for TLS/SSL capabilities (if supported by linked APR library)
 - FIPS 140-2 support for TLS/SSL (if supported by linked OpenSSL library)
 
+可见以下[安装脚本](https://raw.githubusercontent.com/JeffXue/common_scripts/master/install_tomcat_native1.2.5.sh)
+
 # 安装依赖
 
 ## 系统依赖
