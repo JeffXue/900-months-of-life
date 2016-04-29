@@ -2,7 +2,6 @@
 title: 安装memcached可视化管理工具
 tags:
   - memcached
-  - tag2
 date: 2016-04-27 17:53:19
 categories: 运维
 ---
