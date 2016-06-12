@@ -81,11 +81,11 @@ Warning1: cannot use index 'ind_mo' due to type or collation conversion on field
 调整sql mo字段类型
 ```
 SELECT uid FROM user WHERE mo=‘13772556391’ LIMIT 0,1
-``` 
+```
 
 执行时间：
 ```
-mysql> SELECT uid FROM user WHERE mo=‘13772556391’ LIMIT 0,1;
+myql> SELECT uid FROM user WHERE mo=‘13772556391’ LIMIT 0,1;
 Empty set(0.00 sec)
 ```
 
