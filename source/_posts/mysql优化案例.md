@@ -11,7 +11,7 @@ categories: 性能优化
 问题排查：发现数据库中大量的慢sql， 执行时间超过了2s
 慢SQL：SELECT uid FROM user WHERE mo=13772556391 LIMIT 0,1;
 执行计划
-```
+```sql
 mysql > explain SELECT uid FROM user WHERE mo=13772556391 LIMIT 0,1
 ************************** 1. row *********************************
 id: 1
@@ -27,7 +27,7 @@ Extra: Using where
 ```
 
 表结构：
-```
+```sql
 CREATE TABLE `user`(
     `uid` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT 'id',
     `pid` int(11) unsigned NOT NULL DEFALUT '0',
@@ -43,18 +43,18 @@ CREATE TABLE `user`(
 
 优化方案：
 添加索引
-```
+```sql
 mysql> alter table user add index ind_mo(mo);
 ```
 
 执行时间：
-```
+```sql
 mysql> SELECT uid FROM user WHERE mo=13772556391 LIMIT 0,1;
 Empty set(0.05 sec)
 ```
 
 执行计划：
-```
+```sql
 mysql > explain SELECT uid FROM user WHERE mo=13772556391 LIMIT 0,1
 ************************** 1. row *********************************
 id: 1
@@ -71,7 +71,7 @@ Extra: Using where; Using index
 
 ## 隐式转换案例
 **为什么索引的过滤性这么差**
-```
+```sql
 mysql> explain extended SELECT uid FROM user WHERE mo=13772556391 LIMIT 0,1
 mysql> show warnings;
 Warning1: cannot use index 'ind_mo' due to type or collation conversion on field 'mo'
@@ -79,18 +79,18 @@ Warning1: cannot use index 'ind_mo' due to type or collation conversion on field
 
 优化方案：
 调整sql mo字段类型
-```
+```sql
 SELECT uid FROM user WHERE mo=‘13772556391’ LIMIT 0,1
 ```
 
 执行时间：
-```
+```sql
 myql> SELECT uid FROM user WHERE mo=‘13772556391’ LIMIT 0,1;
 Empty set(0.00 sec)
 ```
 
 执行计划：
-```
+```sql
 mysql > explain SELECT uid FROM user WHERE mo=‘13772556391’ LIMIT 0,1
 ************************** 1. row *********************************
 id: 1
@@ -116,26 +116,26 @@ Extra: Using where; Using index
 
 ## 分页优化案例
 普通写法：
-```
+```sql
 select * from buyer where sellerid=100 limit 100000,20 
 ```
 普通limit M, N 的翻页写法，在越往后翻页的过程中速度越慢，原因mysql会读取表中前M+N条数据，M越大，性能就越差
 
 优化写法：
-```
+```sql
 select t1.* from buyer t1, (select id from buyer where sellerid=100 limit 100000,20 ) t2 where t1.id=t2.id
 ```
 需要在t表中的sellerid字段中创建索引，id为表的主键
 
 ## 子查询优化
 典型子查询：
-```
+```sql
 SELECT first_name FROM employees WHERE emp_no IN (SELECT emp_no FROM salaries_2000 WHERE salary=5000);
 ```
 mysql的处理逻辑是遍历employees表中的每一条就，代入子查询中去
 
 改成子查询：
-```
+```sql
 SELECT first_name FROM employees emp, (SELECT emp_no FROM salaries_2000 WHERE salary=5000) sal WHERE emp.emp_no = sal.emp_mo
 ```
 

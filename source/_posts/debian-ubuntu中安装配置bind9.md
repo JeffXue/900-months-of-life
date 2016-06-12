@@ -17,7 +17,7 @@ sudo apt-get install bind9 -y
 安装后配置文件默认在/etc/bind/目录下
 
 - named.conf 
-```
+```bash
 include "/etc/bind/named.conf.options";
 include "/etc/bind/named.conf.local";
 include "/etc/bind/named.conf.default-zones";
@@ -39,7 +39,7 @@ zone | 定义一个区
 全局选项
 
 - named.conf.default-zones
-```
+```bash
 // prime the server with knowledge of the root servers
 zone "." {
     type hint;
@@ -78,7 +78,7 @@ localhost反向区文件，用于将本地回送IP地址(127.0.0.1)转换为名�
 
 # 添加区和资源文件
 编辑named.conf添加一下内容
-```
+```bash
 zone "test.com" in { //提供test.com域的地址接卸
     type master;
     file "/etc/bind/db.test.com";
@@ -91,7 +91,7 @@ zone "1.168.192.in-addr.arpa" { //提供192.168.1.x地址段的反向映射功�
 ```
 
 创建区资源文件/etc/bind/db.test.com，并添加一下内容
-```
+```bash
 ;
 ; BIND data file for domain test.com
 ;
@@ -113,7 +113,7 @@ webserver   IN    CNAME  www
 ```
 
 创建区资源文件/etc/bind/db.192，并添加一下内容
-```
+```bash
 $TTL	604800
 @	IN	SOA	test.com. root.test.com. (
 			      1		; Serial

@@ -16,7 +16,7 @@ logrotate是一个日志文件管理工具。用来把旧文件轮转、压缩�
 ## 命令参数说明
 
 logrotate --help
-```
+```bash
 Usage: logrotate [OPTION...] <configfile>
   -d, --debug               Don't do anything, just test (implies -v)
   -f, --force               Force file rotation
@@ -32,7 +32,7 @@ Help options:
 ## 配置日志切割策略文件
 
 nginx-log-rotate
-```
+```bash
 /log/nginx/*.log {
     nocompress
     daily
@@ -76,6 +76,6 @@ size size | 当日志文件到达指定的大小时才转储，Size 可以指定
 # 配置定时任务
 配置每天23点59分运行一次
 crontab -e
-```
+```bash
 59 23   * * *   /usr/sbin/logrotate -f /usr/local/nginx/conf/nginx-log-rotate
 ```

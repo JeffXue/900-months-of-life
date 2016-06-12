@@ -10,12 +10,12 @@ tags: Apache
 mod_expires可以减少用户的重复请求，将特定的页面缓存到浏览器中，当浏览器请求特定资源时，并且该资源没有过期，将会访问浏览器缓存，不向服务器发出请求
 
 apache默认包含了该模块，需要在httpd.conf中启用并进行配置
-```
+```bash
 LoadModule expires_module modules/mod_expires.so
 ```
 
 范例1：
-```
+```bash
 <IfModule mod_expires.c>
     # 启用expires
     ExpiresActive On
@@ -27,7 +27,7 @@ LoadModule expires_module modules/mod_expires.so
 ```
 
 范例2：
-```
+```bash
 <IfModule mod_expires.c>
     ExpiresActive On
     # 对不同的类型设置不同的超时时间，86400为1天，604800为7天
@@ -44,7 +44,7 @@ LoadModule expires_module modules/mod_expires.so
 ```
 
 范例3：
-```
+```bash
 <IfModule mod_expires.c>
     ExpiresActive On
     ExpiresDefault A0

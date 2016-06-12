@@ -21,7 +21,7 @@ The Apache HTTP Server Project is an effort to develop and maintain an open-sour
 完整安装脚本可查看[github脚本]( https://raw.githubusercontent.com/JeffXue/common_scripts/master/install_apache2.4.sh)
 
 ## apr
-```
+```bash
 tar xvzf apr-1.4.5.tar.gz -C /usr/local/
 cd /usr/local/apr-1.4.5
 ./configure --prefix=/usr/local/apr
@@ -29,7 +29,7 @@ make && make install
 ```
 
 ## apr-util
-```
+```bash
 tar xvzf apr-util-1.3.12.tar.gz -C /usr/local/
 cd /usr/local/apr-util-1.3.12
 ./configure --prefix=/usr/local/apr-util --with-apr=/usr/local/apr
@@ -37,7 +37,7 @@ make && make install
 ```
 
 ## pcre
-```
+```bash
 tar xvzf pcre-8.10.tar.gz -C /usr/local/
 cd /usr/local/pcre-8.10
 ./configure --prefix=/usr/local/pcre
@@ -45,7 +45,7 @@ make && make install
 ```
 
 ## zlib
-```
+```bash
 tar xvzf zlib-1.2.7.tar.gz -C /usr/local/
 cd /usr/local/zlib-1.2.7
 ./configure --prefix=/usr/local/zlib
@@ -53,7 +53,7 @@ make && make install
 ```
 
 ## openssl
-```
+```bash
 tar xvzf openssl-1.0.1p.tar.gz -C /usr/local/
 cd /usr/local/openssl-1.0.1p
 ./config --prefix=/usr/local/openssl  -fPIC no-gost
@@ -62,7 +62,7 @@ make && make install
 ```
 
 ## httpd
-```
+```bash
 tar xvzf httpd-2.4.3.tar.gz -C /usr/local/
 cd /usr/local/httpd-2.4.3
 ./configure --prefix=/usr/local/apache  --enable-mods-shared=all --enable-ssl --enable-proxy-http --enable-expires --enable-deflate --enable-dav --with-apr=/usr/local/apr --with-apr-util=/usr/local/apr-util --with-z=/usr/local/zlib --with-pcre=/usr/local/pcre --with-ssl=/usr/local/openssl --with-mpm=event
@@ -71,21 +71,21 @@ make && make install
 
 # 基本操作
 版本查看
-```
+```bash
 /usr/local/apache/bin/apachectl -V
 ```
 
 启动
-```
+```bash
 /usr/local/apache/bin/apachectl start
 ```
 
 停止
-```
+```bash
 /usr/local/apache/bin/apachectl stop
 ```
 
 重启
-```
+```bash
 /usr/local/apache/bin/apachectl restart
 ``` 

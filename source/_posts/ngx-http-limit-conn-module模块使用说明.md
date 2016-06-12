@@ -12,7 +12,7 @@ ngx_http_limit_conn_module限制指定key值的并发连接数，如限制单个
 并不是所有连接都会统计，只有当这个请求正在被处理，并且整个请求头已经被读取的情况下，这个连接才会被统计进来。
 
 例子：
-```
+```bash
 http {
     # Sets parameters for a shared memory zone that will keep states for various keys. 
     limit_conn_zone $binary_remote_addr zone=addr:10m;
@@ -32,7 +32,7 @@ http {
 ```
 
 可以设置多个限制：
-```
+```bash
     limit_conn_zone $binary_remote_addr zone=perip:10m;
     limit_conn_zone $server_name zone=perserver:10m;
 

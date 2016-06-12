@@ -14,7 +14,7 @@ Memcached 是一个高性能的分布式内存对象缓存系统，用于动态W
 
 ## libevent
 memcached是基于libevent的事件处理,libevent是一个事件触发的网络库，适用于windows、linux、bsd等多种平台，内部使用select、epoll、kqueue等系统调用管理事件机制
-```
+```bash
 tar xvzf libevent-2.0.22-stable.tar.gz -C /usr/local
 cd /usr/local/libevent-2.0.22-stable
 ./configure --prefix=/usr/local/libevent2022
@@ -22,7 +22,7 @@ make && make install
 ```
 
 ## memcached
-```
+```bash
 tar xvf memcached-1.4.25.tar.gz -C /usr/local/
 cd /usr/local/memcached-1.4.25
 ./configure --prefix=/usr/local/memcached --enable-sasl --with-libevent=/usr/local/libevent2022
@@ -31,12 +31,12 @@ make && make install
 
 ## sasl
 若需要使用sasl进行认证，需要安装sasl
-```
+```bash
 apt-get install libsasl2-2 sasl2-bin libsasl2-2 libsasl2-dev libsasl2-modules -y
 ```
 
 配置/etc/default/saslauthd
-```
+```bash
 # 配置为开机默认启动
 START=yes
 
@@ -45,14 +45,14 @@ MECHANISMS="shadow"
 ```
 
 启动sasl
-```
+```bash
 /etc/init.d/saslauthd start
 ```
 
 # 基本操作
 
 ## 启动
-```
+```bash
 /usr/local/memcached/bin/memcached -p 11211 -l 127.0.0.1 -d  -u root -m 10 -c 256 -P /tmp/memcached.pid
 ```
 
@@ -75,18 +75,18 @@ MECHANISMS="shadow"
 
 ## 停止
 直接杀掉进程即可
-```
+```bash
 kill `cat /tmp/memcached.pid`
 ```
 
 ## 查看状态
-```
+```bash
 telnet 127.0.0.1 11211
 stats
 ```
 
 ## 清空统计数据
-```
+```bash
 telnet 127.0.0.1 11211
 stats reset
 ```

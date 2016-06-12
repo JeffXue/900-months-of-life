@@ -7,12 +7,12 @@ categories: 运维
 ---
 
 - 主配置中启动httpd-default.conf
-```
+```conf
 Include conf/extra/httpd-default.conf
 ```
 
 - 修改httpd-default.conf
-```
+```conf
 ServerTokens Prod
 ServerSignature off
 ```

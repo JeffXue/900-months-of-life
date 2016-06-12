@@ -9,7 +9,7 @@ categories: 运维
 
 ngx_http_gzip_module是一个使用gzip方法压缩响应内容的过滤器。这会减少一一半以上的传输内容
 
-```
+```bash
     # 开启gzip
     gzip                on;
     # 设置用于压缩的buffer数量和大小

@@ -11,7 +11,7 @@ nginx [engine x] 是一个HTTP反向代理服务器，一个邮件代理服务�
 [官方文档](http://nginx.org/en/docs/)
 
 # 编译安装
-```
+```bash
 ./configure --prefix=/usr/local/nginx --with-http_ssl_module --with-http_stub_status_module --with-http_gzip_static_module --with-http_realip_module --with-pcre=/usr/local/pcre-8.10 --with-openssl=/usr/local/openssl-1.0.1p --with-zlib=/usr/local/zlib-1.2.7
 
 make && make install
@@ -27,7 +27,7 @@ make && make install
 # 基本操作
 
 nginx 帮助说明
-```
+```bash
 /usr/local/nginx/sbin/nginx -h
 
 nginx version: nginx/1.8.1
@@ -46,27 +46,27 @@ Options:
 ```
 
 启动
-```
+```bash
 /usr/local/nginx/sbin/nginx
 ```
 
 快速停止
-```
+```bash
 /usr/local/nginx/sbin/nginx -s stop
 ```
 
 优雅停止
-```
+```bash
 /usr/local/nginx/sbin/nginx -s quit
 ```
 
 重载
-```
+```bash
 /usr/local/nginx/sbin/nginx -s reload
 ```
 
 重新打开日志文件
-```
+```bash
 /usr/local/nginx/sbin/nginx -s reopen
 ```
 

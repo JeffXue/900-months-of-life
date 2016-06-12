@@ -9,7 +9,7 @@ date: 2016-03-22 16:03:04
 
 # nginx.conf
 nginx主要的配置文件为nginx.conf，以下配置主要针对该配置文件进行说明
-```
+```bash
 # 配置运行用户
 #user  nobody;
 # 设置启动进程数量

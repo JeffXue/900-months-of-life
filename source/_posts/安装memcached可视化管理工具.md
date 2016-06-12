@@ -23,7 +23,7 @@ MemAdmin是一款可视化的Memcached管理与监控工具，基于 PHP5 & JQue
 详细请看[安装脚本](https://raw.githubusercontent.com/JeffXue/common_scripts/master/install_php5.6.sh)
 
 # 安装php memcahce插件
-```
+```bash
 tar xvzf memcache-2.2.7.tgz
 cd memcache-2.2.7
 /usr/local/php/bin/phpize
@@ -35,26 +35,26 @@ mkdir /usr/local/php/modules
 
 # 配置php.ini
 /usr/local/php/lib/php.ini
-```
+```ini
 extension_dir = "/usr/local/php/modules"
 extension=memcache.so
 ```
 
 # 检查配置
-```
+```bash
 /usr/local/php/bin/php -c /usr/local/php/lib/php.ini -m
 #检查输出中是否包含有memcache
 ```
 
 # 解压MemAdmin
-```
+```bash
 tar xvzf memadmin-1.0.12.tar.gz -C /usr/local/apps/
 mv /usr/local/apps/memadmin-1.0.12 /usr/local/apps/memadmin
 ```
 
 # 配置nginx
-nginx.con
-```
+nginx.conf
+```conf
     server {
         server_name memadmin.youdomain.com;
         root    /usr/local/apps/memadmin;

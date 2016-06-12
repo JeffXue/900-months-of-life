@@ -14,7 +14,7 @@ Redis also supports trivial-to-setup master-slave asynchronous replication, with
 
 # 安装
 具体可见[安装脚本](https://raw.githubusercontent.com/JeffXue/common_scripts/master/install_redis2.8.sh)
-```
+```bash
 tar xvzf redis-2.8.24.tar.gz -C /usr/local/
 cd /usr/local/redis-2.8.24
 make
@@ -27,13 +27,13 @@ cp redis-benchmark redis-server redis-cli redis-sentinel /usr/local/redis
 
 # 基本操作
 ## 启动
-```
+```bash
 cd /usr/local/redis
 ./redis-server ./redis.conf
 ```
 
 ## 停止
-```
+```bash
 cd /usr/local/redis
 # 若redis配置了密码使用-a passwd 指定密码 即可
 ./redis-cli -p 6379 shutdown
@@ -41,7 +41,7 @@ cd /usr/local/redis
 ```
 
 ## 查看性能数据
-```
+```bash
 # 实时监控redis的操作
 ./redis-cli -h 127.0.0.1 -p 6379 monitor
 
@@ -51,7 +51,7 @@ cd /usr/local/redis
 ```
 
 ## 清空数据
-```
+```bash
 ./redis-cli -h 127.0.0.1 -p 6379 flushall
 ```
 

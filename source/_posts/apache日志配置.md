@@ -9,7 +9,7 @@ tags: Apache
 
 ## 配置
 修改httpd.conf中的LogFormat
-```
+```bash
 <IfModule log_config_module>
     LogFormat "%h %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-Agent}i\" \"%{X-Forwarded-For}i\" %D \"%{Host}i\" " combined
     LogFormat "%h %l %u %t \"%r\" %>s %b" common
@@ -20,7 +20,7 @@ tags: Apache
 </IfModule>
 ```
 修改extra/httpd-ssl.conf的CustomLog
-```
+```bash
 CustomLog "/usr/local/apache/logs/ssl_request_log" \
           "%h %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-Agent}i\" \"%{X-Forwarded-For}i\" %D \"%{Host}i\" %{SSL_PROTOCOL}x %{SSL_CIPHER}x 
 ```
@@ -45,7 +45,7 @@ Format String | 描述
 ## 配置
 使用apache自带的rotatelogs来进行日志切割，[官方说明](https://httpd.apache.org/docs/2.4/programs/rotatelogs.html)
 修改httpd.conf
-```
+```bash
 <IfModule log_config_module>
     LogFormat "%h %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-Agent}i\" \"%{X-Forwarded-For}i\" %D \"%{Host}i\" " combined
     LogFormat "%h %l %u %t \"%r\" %>s %b" common
@@ -56,7 +56,7 @@ Format String | 描述
 </IfModule>
 ```
 修改extra/httpd-ssl.conf
-```
+```bash
 CustomLog " | /usr/local/apache/bin/rotatelogs -l /usr/local/apache/logs/access_ssl_%Y-%m-%d.log 86400" \
           "%h %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-Agent}i\" \"%{X-Forwarded-For}i\" %D \"%{Host}i\" %{SSL_PROTOCOL}x %{SSL_CIPHER}x 
 ```

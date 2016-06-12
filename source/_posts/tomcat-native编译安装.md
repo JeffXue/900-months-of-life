@@ -22,17 +22,17 @@ Features of the APR connector:
 
 ## 系统依赖
 debian based linux
-```
+```bash
 apt-get install libapr1-dev libssl-dev
 ```
 
 rpm based linux
-```
+```bash
 yum install apr-devel openssl-devel
 ```
 
 ## apr
-```
+```bash
 tar xvzf apr-1.4.5.tar.gz -C /usr/local/
 cd /usr/local/apr-1.4.5
 ./configure --prefix=/usr/local/apr
@@ -41,7 +41,7 @@ make && make install
 
 
 ## openssl
-```
+```bash
 tar xvzf openssl-1.0.2g.tar.gz -C /usr/local/
 cd /usr/local/openssl-1.0.2g
 ./config --prefix=/usr/local/openssl102g  -fPIC no-gost
@@ -51,14 +51,14 @@ make && make install
 
 
 ## jdk
-```
+```bash
 tar xvzf jdk-7u79-linux-x64.tar.gz  -C /usr/local/
 ```
 
 
 # 安装native
 官方地址：https://tomcat.apache.org/download-native.cgi
-```
+```bash
 tar xvzf tomcat-native-1.2.5-src.tar.gz -C /usr/local/
 cd /usr/local/tomcat-native-1.2.5-src/native
 ./configure --with-apr=/usr/local/apr --with-ssl=/usr/local/openssl102g --with-java-home=/usr/local/jdk1.7.0_79 --prefix=/usr/local/apache-tomcat-7.0.68

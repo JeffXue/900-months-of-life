@@ -18,7 +18,7 @@ redis的主从配置十分简单，只需要在slave中设置slaveof <masterip> 
 
 例如：
 master配置redis_6380.conf：
-```
+```conf
 ################################ GENERAL  #####################################
 daemonize yes
 pidfile "/jeffxue/log/redis/redis_6380.pid"
@@ -110,7 +110,7 @@ aof-rewrite-incremental-fsync yes
 ```
 
 slave配置redis_6381.conf:
-```
+```conf
 ################################ GENERAL  #####################################
 daemonize yes
 pidfile "/jeffxue/log/redis/redis_6381.pid"
@@ -202,7 +202,7 @@ aof-rewrite-incremental-fsync yes
 ```
 
 启动master和slave：
-```
+```bash
 ./redis-server redis_6380.conf
 ./redis-server redis_6381.conf
 ```
@@ -276,7 +276,7 @@ sentinel sentinel 127.0.0.1:26579 127.0.0.1 26579 ....
 根据声明Leader选举规则可知，sentinel的数量应为奇数，次数配置3个sentinel
 
 sentinel_26379.conf
-```
+```conf
 daemonize yes
 port 26379
 dir "/tmp"
@@ -289,7 +289,7 @@ sentinel auth-pass mymaster 123456
 ```
 
 sentinel_26380.conf
-```
+```conf
 daemonize yes
 port 26380
 dir "/tmp"
@@ -302,7 +302,7 @@ sentinel auth-pass mymaster 123456
 ```
 
 sentinel_26381.conf
-```
+```conf
 daemonize yes
 port 26381
 dir "/tmp"
@@ -315,7 +315,7 @@ sentinel auth-pass mymaster 123456
 ```
 
 启动sentinel：
-```
+```bash
 ./redis-sentinel sentinel_26379.conf --sentinel
 ./redis-sentinel sentinel_26380.conf --sentinel
 ./redis-sentinel sentinel_26381.conf --sentinel
@@ -326,7 +326,7 @@ sentinel auth-pass mymaster 123456
 
 
 ## jedis
-```
+```java
 package cn.jeffxue.test;
 
 import org.apache.commons.pool2.impl.GenericObjectPoolConfig;

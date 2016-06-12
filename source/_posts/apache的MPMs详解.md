@@ -20,7 +20,7 @@ Multi-Processing Modules（MPMs）为多路处理模块，对于类UNIX系统，
 ### Perfork 配置
 
 extra/httpd-mpm.conf
-```
+```bash
 <IfModule mpm_prefork_module>
     # 启动进程数量
     StartServers             5
@@ -58,7 +58,7 @@ extra/httpd-mpm.conf
 ### Worker 配置
 
 extra/httpd-mpm.conf
-```
+```bash
 <IfModule mpm_worker_module>
     # 启动进程数量
     StartServers             3
@@ -189,7 +189,7 @@ We can calculate the absolute maximum numbers of concurrent connections in two w
 ### Event 配置
 
 extra/httpd-mpm.conf
-```
+```bash
 <IfModule mpm_event_module>
     # 启动进程数量
     StartServers             3
@@ -220,7 +220,7 @@ extra/httpd-mpm.conf
 
 ## 当前的MPM模式
 运行以下命令，查看MPM输出
-```
+```bash
 /usr/local/apache/bin/apachectl -V
 ```
 
@@ -231,7 +231,7 @@ extra/httpd-mpm.conf
 
 ## 以动态模块编译MPM
 以动态模式编译MPM，并通过LoadModule加载，而不必要对httpd进行重新编译
-```
+```bash
 LoadModule mpm_prefork_module modules/mod_mpm_prefork.so
 ```
 但需要在httpd编辑阶段指定了编译共享模块：--enable-mods-shared=all 或者 --enable-mpms-shared=all

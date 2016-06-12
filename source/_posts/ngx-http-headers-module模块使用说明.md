@@ -11,7 +11,7 @@ date: 2016-03-22 17:59:04
 ngx_http_headers_module 允许添加Expires和Cache-Control域和任意的域到响应头中。
 
 例子
-```
+```bash
 expires    24h;
 expires    modified +24h;
 expires    @24h;
@@ -43,7 +43,7 @@ add_header Cache-Control private;
 后面为正数/0，将添加头：Cache-Control: max-age=t
 
 可以根据不同文件类型设置不同的超时时间
-```
+```bash
     map $sent_http_content_type  $expires {
         "~*image/*"                         7d;
         "~*application/x-javascript"        7d;

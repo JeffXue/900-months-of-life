@@ -10,7 +10,7 @@ mod_rewrite使用基于规则的重写引擎，基于PCRE正则表达式解析�
 
 修改httpd.conf以开启mod_rewrite模块，并在对应的目录中进行配置，详细可看[官方文档](http://httpd.apache.org/docs/current/mod/mod_rewrite.html)
 
-```
+```bash
 LoadModule rewrite_module modules/mod_rewrite.so
 
 <Directory "/usr/local/apache/htdocs">
@@ -26,7 +26,7 @@ LoadModule rewrite_module modules/mod_rewrite.so
 
 # 例子
 将一个域名下的访问永久重定向（301）到另外一个域名下,在网站域名迁移时会使用上
-```
+```bash
 <VirtualHost *:80>
     ServerAdmin webmaster@dummy-host.example.com
     ServerName www.oldDomain.cn

@@ -13,7 +13,7 @@ date: 2016-03-22 16:26:40
 本文主要针对nginx支持HTTPS配置进行说明，详情见[官方文档](http://nginx.org/en/docs/http/ngx_http_ssl_module.html#ssl_protocols)
 
 nginx.conf
-```
+```bash
     # 服务器证书， nginx无法设置CA证书，导致手机端无法通过ssl握手，把CA证书合并到该文件中即可
     ssl_certificate             /usr/local/nginx/conf/newssl/nginx_domain.crt;
     # 服务器秘钥

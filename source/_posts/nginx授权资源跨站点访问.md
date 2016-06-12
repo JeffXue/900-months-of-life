@@ -11,12 +11,12 @@ Access-Control-Allow-Origin 是html5 添加的新功能。基本上, 这是一�
 比方说, 你的图片都放在 res.byneil.com 这个域下, 如果在返回的头中没有设置Access-Control-Allow-Origin , 那么别的域是不能外链你的图片的。当然这要取决于浏览器的实现是否遵守规范。所以导致一些网站资源加载不进来.
 
 解决方法就是 在资源的头中 加入 Access-Control-Allow-Origin 指定你授权的域. 这里指定星号 * , 任何域都可以访问我的资源.
-```
+```bash
 Access-Control-Allow-Origin: *
 ```
 
 具体操作方法, 就是在nginx的conf文件中加入以下内容：
-```
+```bash
 location / {
     add_header Access-Control-Allow-Origin *;
     ......
@@ -24,7 +24,7 @@ location / {
 ```
 
 只授权指定后缀的资源，可以这样配置：
-```
+```bash
 location ~* \.(eot|ttf|woff|woff2|json)$ {
     add_header  Access-Control-Allow-Origin *;
     ......

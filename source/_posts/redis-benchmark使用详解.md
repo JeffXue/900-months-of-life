@@ -11,7 +11,7 @@ categories: 运维
 redis-benchmark是redis自带的一个工具，可用于测试redis的性能
 
 # 参数说明
-```
+```bash
 Usage: redis-benchmark [-h <host>] [-p <port>] [-c <clients>] [-n <requests]> [-k <boolean>]
 
  -h <hostname>      Server hostname (default 127.0.0.1) #所要连接的机器
@@ -39,7 +39,7 @@ Usage: redis-benchmark [-h <host>] [-p <port>] [-c <clients>] [-n <requests]> [-
 ```
 
 # 范例
-```
+```bash
 #默认情况下是每种类型发送10000个请求，并发50个连接，3bytes的payload，开启keepalive
 #具体会进行以下类型测试：
 #    PING_INLINE

@@ -7,7 +7,7 @@ tags: Apache
 
 # httpd.conf
 
-```
+```bash
 # httpd HOME目录
 ServerRoot "/usr/local/apache"
 # server name
@@ -206,7 +206,7 @@ RequestHeader unset DNT env=bad_DNT
 # extra/httpd-vhosts.conf
 
 若需要使用代理，需要在httpd.conf中开启代理模块
-```
+```bash
 LoadModule proxy_module modules/mod_proxy.so
 LoadModule proxy_connect_module modules/mod_proxy_connect.so
 LoadModule proxy_ftp_module modules/mod_proxy_ftp.so
@@ -214,7 +214,7 @@ LoadModule proxy_http_module modules/mod_proxy_http.so
 ```
 
 httpd-vhosts.conf
-```
+```bash
 <VirtualHost *:80>
     # 该虚拟主机的管理员
     ServerAdmin webmaster@dummy-host.example.com
@@ -252,7 +252,7 @@ httpd-vhosts.conf
 # extra/httpd-ssl.conf
 
 若需要启动ssl，需要修改httpd.conf配置
-```
+```bash
 LoadModule slotmem_shm_module modules/mod_slotmem_shm.so
 LoadModule slotmem_plain_module modules/mod_slotmem_plain.so
 LoadModule ssl_module modules/mod_ssl.so
@@ -261,7 +261,7 @@ Include conf/extra/httpd-ssl.conf
 ```
 
 httpd-ssl.conf
-```
+```bash
 # 监听端口
 Listen 443
 
@@ -333,7 +333,7 @@ ProxyPassReverse / http://127.0.0.1:8080/
 
 # extra/httpd-mpm.conf
 详细可参考：[apache的MPMs详解](http://www.jeffxue.cn/2016/03/10/apache%E7%9A%84MPMs%E8%AF%A6%E8%A7%A3/)
-```
+```bash
 <IfModule !mpm_netware_module>
     PidFile "logs/httpd.pid"
 </IfModule>
@@ -417,12 +417,12 @@ ProxyPassReverse / http://127.0.0.1:8080/
 # extra/httpd-info.conf
 
 需要在httpd.conf启动info模块才能查看info信息
-```
+```bash
 LoadModule info_module modules/mod_info.so
 ```
 
 httpd-info.conf
-```
+```bash
 <Location /server-status>
     SetHandler server-status
     # 允许访问的host
