@@ -31,6 +31,8 @@ fi
 JAVA_HOME=/usr/local/jdk1.7.0_79
 ```
 
+<!-- more -->
+
 ## 修改catalina.out输出路径
 默认情况下catalina.out会输出到tomcat的logs目录下，可自行修改其输出路径
 /usr/local/tomcat/bin/catalina.sh

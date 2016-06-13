@@ -17,6 +17,8 @@ Multi-Processing Modules（MPMs）为多路处理模块，对于类UNIX系统，
 
 这个MPM具有很强的自我调节能力，一般情况很少去调整配置。最重要的配置是MaxRequestWorkers，应该让该值大于你所预估的同时并发请求数，同时也应考虑是否有足够的内存。
 
+<!-- more -->
+
 ### Perfork 配置
 
 extra/httpd-mpm.conf

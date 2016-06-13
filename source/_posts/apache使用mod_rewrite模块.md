@@ -23,6 +23,7 @@ LoadModule rewrite_module modules/mod_rewrite.so
     Require all granted
 </Directory>
 ```
+<!-- more -->
 
 # 例子
 将一个域名下的访问永久重定向（301）到另外一个域名下,在网站域名迁移时会使用上

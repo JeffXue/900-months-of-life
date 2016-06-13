@@ -25,6 +25,8 @@ cd src
 cp redis-benchmark redis-server redis-cli redis-sentinel /usr/local/redis
 ```
 
+<!-- more -->
+
 # 基本操作
 ## 启动
 ```bash

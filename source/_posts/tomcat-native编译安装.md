@@ -18,6 +18,8 @@ Features of the APR connector:
 
 可见以下[安装脚本](https://raw.githubusercontent.com/JeffXue/common_scripts/master/install_tomcat_native1.2.5.sh)
 
+<!-- more -->
+
 # 安装依赖
 
 ## 系统依赖

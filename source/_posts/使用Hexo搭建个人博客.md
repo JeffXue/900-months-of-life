@@ -15,6 +15,8 @@ Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（�
 $ sudo apt-get install git
 ```
 
+<!-- more -->
+
 ### 安装Node.js
 下载https://raw.github.com/creationix/nvm/master/install.sh 后运行安装nvm
 安装完成后，重启终端执行以下命令即可安装node.js

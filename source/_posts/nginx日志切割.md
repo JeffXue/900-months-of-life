@@ -29,6 +29,8 @@ Help options:
       --usage               Display brief usage message
 ```
 
+<!-- more -->
+
 ## 配置日志切割策略文件
 
 nginx-log-rotate

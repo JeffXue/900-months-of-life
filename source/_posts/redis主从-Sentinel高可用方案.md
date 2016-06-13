@@ -13,6 +13,8 @@ redis主从保证了数据的可靠性，而redis sentinel可以提升其可用�
 
 但是一般情况下，主从分别部署在不同的服务器上，对外服务IP不同，当sentinel进行了主从切换后，应用程序如何切换访问新的master。而实际上应用程序可以通过访问sentinel获取最新master，从而达到无缝的切换（Jedis提供了JedisSentinelPool，但在主从切换后需主动重新获取新的连接；而spring-data-redis中使用RedisTemplates进行调用不会有该问题，具体见后面章节）
 
+<!-- more -->
+
 # redis 主从
 redis的主从配置十分简单，只需要在slave中设置slaveof <masterip> <masterport>即可
 

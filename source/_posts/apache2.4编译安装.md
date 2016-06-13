@@ -16,6 +16,8 @@ The Apache HTTP Server Project is an effort to develop and maintain an open-sour
 - zlib  提供数据压缩用的函式库
 - openssl   是一个强大的安全套接字层密码库，囊括主要的密码算法、常用的密钥和证书封装管理功能及SSL协议，并提供丰富的应用程序供测试或其它目的使用
 
+<!-- more -->
+
 # 安装
 
 完整安装脚本可查看[github脚本]( https://raw.githubusercontent.com/JeffXue/common_scripts/master/install_apache2.4.sh)

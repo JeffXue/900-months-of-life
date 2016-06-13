@@ -22,6 +22,9 @@ include "/etc/bind/named.conf.options";
 include "/etc/bind/named.conf.local";
 include "/etc/bind/named.conf.default-zones";
 ```
+
+<!-- more -->
+
  设置一般的named参数，指向该服务器使用的域数据库的信息源，配置语句：
 命令|用法
 ----|----

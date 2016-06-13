@@ -31,6 +31,8 @@ http {
         }
 ```
 
+<!-- more -->
+
 可以设置多个限制：
 ```bash
     limit_conn_zone $binary_remote_addr zone=perip:10m;

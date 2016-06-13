@@ -8,6 +8,8 @@ tags: Apache
 # mod_deflate模块
 
 [apache2.4编译安装](http://www.jeffxue.cn/2016/03/07/apache2.4%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85/)时加入--enable-deflate，然后在httpd.conf模块中启用该模块，并添加配置
+
+<!-- more -->
 ```bash
 LoadModule deflate_module modules/mod_deflate.so
 ......

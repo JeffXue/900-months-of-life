@@ -15,6 +15,8 @@ Access-Control-Allow-Origin 是html5 添加的新功能。基本上, 这是一�
 Access-Control-Allow-Origin: *
 ```
 
+<!-- more -->
+
 具体操作方法, 就是在nginx的conf文件中加入以下内容：
 ```bash
 location / {

@@ -24,6 +24,8 @@ make && make install
 --with-openssl=/usr/local/openssl-1.0.1p #设置openssl源目录
 --with-zlib=/usr/local/zlib-1.2.7 #设置zlib源目录
 
+<!-- more -->
+
 # 基本操作
 
 nginx 帮助说明

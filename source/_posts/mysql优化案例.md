@@ -11,6 +11,8 @@ categories: 性能优化
 问题排查：发现数据库中大量的慢sql， 执行时间超过了2s
 慢SQL：SELECT uid FROM user WHERE mo=13772556391 LIMIT 0,1;
 执行计划
+
+<!-- more -->
 ```sql
 mysql > explain SELECT uid FROM user WHERE mo=13772556391 LIMIT 0,1
 ************************** 1. row *********************************

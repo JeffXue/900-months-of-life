@@ -19,6 +19,8 @@ MemAdmin是一款可视化的Memcached管理与监控工具，基于 PHP5 & JQue
 - 兼容memcache协议的其他服务，如Tokyo Tyrant (遍历功能除外)
 - 支持服务器连接池，多服务器管理切换方便简洁
 
+<!-- more -->
+
 # 安装php
 详细请看[安装脚本](https://raw.githubusercontent.com/JeffXue/common_scripts/master/install_php5.6.sh)
 

@@ -18,6 +18,7 @@ mkdir /usr/local/mysql/data_slave
 chown -R mysql:mysql /usr/local/mysql/data
 chown -R mysql:mysql /usr/local/mysql/data_slave
 ```
+<!-- more -->
 
 - 配置my.cnf
 ```cnf

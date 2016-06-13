@@ -38,6 +38,8 @@ Usage: redis-benchmark [-h <host>] [-p <port>] [-c <clients>] [-n <requests]> [-
  -I                 Idle mode. Just open N idle connections and wait. # 空闲模式，只创建连接
 ```
 
+<!-- more -->
+
 # 范例
 ```bash
 #默认情况下是每种类型发送10000个请求，并发50个连接，3bytes的payload，开启keepalive

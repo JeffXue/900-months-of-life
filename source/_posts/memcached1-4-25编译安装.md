@@ -21,6 +21,8 @@ cd /usr/local/libevent-2.0.22-stable
 make && make install
 ```
 
+<!-- more -->
+
 ## memcached
 ```bash
 tar xvf memcached-1.4.25.tar.gz -C /usr/local/
