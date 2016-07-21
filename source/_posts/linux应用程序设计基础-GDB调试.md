@@ -1,11 +1,11 @@
 ---
 title: linux应用程序设计基础--GDB调试
 tags:
-  - linux
+  - Linux
   - gdb
 date: 2012-11-19 17:46
 categories:
-  - linux programming
+  - Linux Programming
 ---
 
 # GDB作用

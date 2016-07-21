@@ -1,10 +1,10 @@
 ---
 title: linux应用程序设计基础--进程间通信（IPC）
 tags:
-  - linux
+  - Linux
 date: 2012-11-20 10:41
 categories:
-  - linux programming
+  - Linux Programming
 ---
 
 # 进程间通信作用

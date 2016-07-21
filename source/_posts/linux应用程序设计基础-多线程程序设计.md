@@ -1,10 +1,10 @@
 ---
 title: linux应用程序设计基础--多线程程序设计
 tags:
-  - linux
+  - Linux
 date: 2012-11-21 14:22
 categories:
-  - linux programming
+  - Linux Programming
 ---
 
 # 为什么使用多线程原因

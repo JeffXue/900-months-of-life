@@ -1,11 +1,11 @@
 ---
 title: linux应用程序设计基础--Makefile工程管理
 tags:
-  - linux
+  - Linux
   - makefile
 date: 2012-11-19 17:58
 categories:
-  - linux programming
+  - Linux Programming
 ---
 
 - GNU make 构建和管理软件工具

@@ -1,10 +1,10 @@
 ---
 title: linux应用程序设计基础--进程控制编程
 tags:
-  - linux
+  - Linux
 date: 2012-11-20 09:44
 categories:
-  - linux programming
+  - Linux Programming
 ---
 
 # 获取ID

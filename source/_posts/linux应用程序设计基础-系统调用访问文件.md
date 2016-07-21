@@ -1,10 +1,10 @@
 ---
 title: linux应用程序设计基础--系统调用访问文件
 tags:
-  - linux
+  - Linux
 date: 2012-11-19 18:44
 categories:
-  - linux programming
+  - Linux Programming
 ---
 
 # 文件编程

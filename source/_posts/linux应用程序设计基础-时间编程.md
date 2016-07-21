@@ -1,10 +1,10 @@
 ---
 title: linux应用程序设计基础--时间编程
 tags:
-  - linux
+  - Linux
 date: 2012-11-19 19:14
 categories:
-  - linux programming
+  - Linux Programming
 ---
 
 # 时间类型

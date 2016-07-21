@@ -1,11 +1,11 @@
 ---
 title: linux应用程序设计基础--GCC编译器
 tags:
-  - linux
+  - Linux
   - gcc
 date: 2012-11-19 17:35
 categories:
-  - linux programming
+  - Linux Programming
 ---
 
 # GCC 通过后缀来区别输入文件类别

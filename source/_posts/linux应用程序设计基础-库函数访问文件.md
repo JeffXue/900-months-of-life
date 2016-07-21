@@ -1,10 +1,10 @@
 ---
 title: linux应用程序设计基础--库函数访问文件
 tags:
-  - linux
+  - Linux
 date: 2012-11-19 19:01
 categories:
-  - linux programming
+  - Linux Programming
 ---
 
 C库函数独立于具体的操作系统，具有较强移植性
