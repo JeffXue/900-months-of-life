@@ -12,10 +12,9 @@ mod_expires可以减少用户的重复请求，将特定的页面缓存到浏览
 apache默认包含了该模块，需要在httpd.conf中启用并进行配置
 ```bash
 LoadModule expires_module modules/mod_expires.so
+```
 
 <!-- more -->
-
-```
 
 范例1：
 ```bash
