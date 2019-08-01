@@ -6,6 +6,7 @@
 title: Blog of Jeff Xue
 subtitle:
 description: Think Bigger, Start Simple!
+keywords:
 author: Jeff Xue
 language: zh-Hans
 timezone: Asia/Chongqing
@@ -39,10 +40,19 @@ relative_link: false
 future: true
 highlight:
   enable: true
-  line_number: false
+  line_number: true
   auto_detect: false
   tab_replace:
-
+  
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+  
 # Category & Tag
 default_category: uncategorized
 category_map:
@@ -63,7 +73,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: hexo-theme-next-5.0.1
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -71,5 +81,3 @@ deploy:
   type: git
   repository: git@github.com:JeffXue/JeffXue.github.io.git
   branch: master
-
-
