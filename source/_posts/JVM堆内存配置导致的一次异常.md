@@ -4,7 +4,7 @@ tags:
   - JVM
   - tomcat
 date: 2016-08-02 15:39:30
-categories: 性能优化
+categories: 性能测试
 ---
 
 # 问题由来

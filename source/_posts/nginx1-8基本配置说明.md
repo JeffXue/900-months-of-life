@@ -1,6 +1,6 @@
 ---
 title: nginx1.8基本配置说明
-categories: 运维
+categories: 中间件
 tags:
   - Nginx
 date: 2016-03-22 16:03:04

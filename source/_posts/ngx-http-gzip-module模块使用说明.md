@@ -3,7 +3,7 @@ title: ngx_http_gzip_module模块使用说明
 tags:
   - Nginx
 date: 2016-03-22 17:44:56
-categories: 运维
+categories: 中间件
 ---
 
 

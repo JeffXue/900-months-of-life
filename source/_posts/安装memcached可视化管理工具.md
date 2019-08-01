@@ -3,7 +3,7 @@ title: 安装memcached可视化管理工具
 tags:
   - memcached
 date: 2016-04-27 17:53:19
-categories: 运维
+categories: 中间件
 ---
 
 # MemAdmin

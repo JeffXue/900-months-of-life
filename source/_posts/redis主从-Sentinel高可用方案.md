@@ -3,7 +3,7 @@ title: redis主从+Sentinel高可用方案
 tags:
   - redis
 date: 2016-06-12 15:12:12
-categories: 运维
+categories: 中间件
 ---
 
 生产环境redis一直处于单节点运行模式，如果出现故障，则会无法提供服务，因此需要提高redis服务的高可用性，因为本身访问量并不是十分大，另外并无运维人力投入进行维护，因此并不考虑集群方案。通过综合考虑研究采用redis主从，加上redis sentinel组件搭建高可用的redis方案。

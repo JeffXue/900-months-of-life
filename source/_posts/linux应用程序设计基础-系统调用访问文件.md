@@ -4,7 +4,7 @@ tags:
   - Linux
 date: 2012-11-19 18:44
 categories:
-  - Linux Programming
+  - Linux
 ---
 
 # 文件编程

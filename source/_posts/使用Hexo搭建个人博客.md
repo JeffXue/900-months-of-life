@@ -1,7 +1,7 @@
 ---
 title: 使用Hexo搭建个人博客
 date: 2016-01-03 17:37:18
-categories: 运维
+categories: 中间件
 tags: 
 - Hexo
 - Blog

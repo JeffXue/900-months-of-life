@@ -4,7 +4,7 @@ tags:
   - Linux
 date: 2012-11-19 19:14
 categories:
-  - Linux Programming
+  - Linux
 ---
 
 # 时间类型

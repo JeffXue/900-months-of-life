@@ -1,7 +1,7 @@
 ---
 title: apache使用mod_expires模块
 date: 2016-03-08 18:26:56
-categories: 运维
+categories: 中间件
 tags: Apache
 ---
 

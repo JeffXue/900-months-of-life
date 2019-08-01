@@ -3,7 +3,7 @@ title: nginx1.8编译安装
 tags:
   - Nginx
 date: 2016-03-22 15:01:33
-categories: 运维
+categories: 中间件
 ---
 # 概述
 

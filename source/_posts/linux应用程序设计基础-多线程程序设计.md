@@ -4,7 +4,7 @@ tags:
   - Linux
 date: 2012-11-21 14:22
 categories:
-  - Linux Programming
+  - Linux
 ---
 
 # 为什么使用多线程原因

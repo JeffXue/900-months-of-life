@@ -1,6 +1,6 @@
 ---
 title: ngx_http_limit_req_module模块使用说明
-categories: 运维
+categories: 中间件
 tags:
   - Nginx
 date: 2016-03-22 20:39:40

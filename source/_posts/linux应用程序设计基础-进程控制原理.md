@@ -4,7 +4,7 @@ tags:
   - Linux
 date: 2012-11-20 09:30
 categories:
-  - Linux Programming
+  - Linux
 ---
 
 - 进程：是一个具有一定独立能力的程序的一次运行活动

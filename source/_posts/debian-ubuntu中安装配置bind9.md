@@ -1,8 +1,9 @@
 ---
 title: debian/ubuntu中安装配置bind9
 date: 2016-02-17 22:14:18
-categories: 运维
+categories: Linux
 tags: 
+- Debian
 - BIND9 
 - DNS
 ---

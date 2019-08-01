@@ -5,7 +5,7 @@ tags:
   - makefile
 date: 2012-11-19 17:58
 categories:
-  - Linux Programming
+  - Linux
 ---
 
 - GNU make 构建和管理软件工具

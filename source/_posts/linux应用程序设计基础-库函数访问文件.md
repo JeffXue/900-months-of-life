@@ -4,7 +4,7 @@ tags:
   - Linux
 date: 2012-11-19 19:01
 categories:
-  - Linux Programming
+  - Linux
 ---
 
 C库函数独立于具体的操作系统，具有较强移植性

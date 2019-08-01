@@ -5,7 +5,7 @@ tags:
   - gdb
 date: 2012-11-19 17:46
 categories:
-  - Linux Programming
+  - Linux
 ---
 
 # GDB作用

@@ -1,6 +1,6 @@
 ---
 title: nginx_ssl配置说明
-categories: 运维
+categories: 中间件
 tags:
   - Nginx
   - HTTPS

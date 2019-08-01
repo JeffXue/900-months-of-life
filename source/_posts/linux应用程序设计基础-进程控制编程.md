@@ -4,7 +4,7 @@ tags:
   - Linux
 date: 2012-11-20 09:44
 categories:
-  - Linux Programming
+  - Linux
 ---
 
 # 获取ID

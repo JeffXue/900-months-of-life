@@ -4,7 +4,7 @@ tags:
   - Linux
 date: 2012-11-20 10:41
 categories:
-  - Linux Programming
+  - Linux
 ---
 
 # 进程间通信作用

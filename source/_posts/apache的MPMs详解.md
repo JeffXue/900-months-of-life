@@ -1,7 +1,7 @@
 ---
 title: apache的MPMs详解
 date: 2016-03-10 09:21:25
-categories: 运维
+categories: 中间件
 tags: 
 - Apache 
 - MPMS
