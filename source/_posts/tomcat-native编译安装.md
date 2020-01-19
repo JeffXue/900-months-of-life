@@ -3,7 +3,7 @@ title: tomcat-native编译安装
 tags:
   - tomcat native
 date: 2016-04-18 20:09:03
-categories: 中间件
+categories: 运维
 ---
 
 # Tomcat Native概述

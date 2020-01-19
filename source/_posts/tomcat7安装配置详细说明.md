@@ -3,7 +3,7 @@ title: tomcat7安装配置详细说明
 tags:
   - tomcat7
 date: 2016-04-18 20:06:21
-categories: 中间件
+categories: 运维
 ---
 
 # 安装

@@ -1,7 +1,7 @@
 ---
 title: apache日志配置
 date: 2016-03-08 17:20:17
-categories: 中间件
+categories: 运维
 tags: Apache
 ---
 

@@ -3,7 +3,7 @@ title: redis2.8编译安装
 tags:
   - redis
 date: 2016-04-15 23:04:32
-categories: 中间件
+categories: 运维
 ---
 
 # 概述

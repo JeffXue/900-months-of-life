@@ -3,7 +3,7 @@ title: memcached stats输出详解
 tags:
   - memcached
 date: 2016-04-19 10:43:26
-categories: 中间件
+categories: 运维
 ---
 
 STAT | 说明

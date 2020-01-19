@@ -4,7 +4,7 @@ tags:
   - Debian
   - Linux
 date: 2016-07-25 22:51:59
-categories: Linux
+categories: 运维
 ---
 
 # 方法一：修改rc.local

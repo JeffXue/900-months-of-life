@@ -3,7 +3,7 @@ title: redis-benchmark使用详解
 tags:
   - redis
 date: 2016-04-15 23:05:59
-categories: 中间件
+categories: 运维
 ---
 
 # redis-benchmark

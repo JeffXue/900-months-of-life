@@ -3,7 +3,7 @@ title: Git分支管理实践
 tags:
   - Git
 date: 2017-06-17 17:23:03
-categories: 研发流程
+categories: 软件工程
 ---
 
 # Git分支管理实践

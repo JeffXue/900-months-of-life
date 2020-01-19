@@ -1,7 +1,7 @@
 ---
 title: debian/ubuntu中安装配置bind9
 date: 2016-02-17 22:14:18
-categories: Linux
+categories: 运维
 tags: 
 - Debian
 - BIND9 

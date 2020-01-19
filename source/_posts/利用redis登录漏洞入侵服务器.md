@@ -3,7 +3,7 @@ title: 利用redis登录漏洞入侵服务器
 tags:
   - redis
 date: 2017-06-17 13:49:39
-categories: 中间件
+categories: 运维
 ---
 
 redis 没有设置密码认证情况下，可以通过该漏洞入侵服务器

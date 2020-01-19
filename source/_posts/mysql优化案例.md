@@ -3,7 +3,7 @@ title: mysql优化案例
 tags:
   - mysql
 date: 2016-06-12 09:28:27
-categories: 性能测试
+categories: 运维
 ---
 # 索引
 ## 无索引案例

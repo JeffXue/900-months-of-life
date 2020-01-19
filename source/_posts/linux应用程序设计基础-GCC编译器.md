@@ -5,7 +5,7 @@ tags:
   - gcc
 date: 2012-11-19 17:35
 categories:
-  - Linux
+  - 嵌入式
 ---
 
 # GCC 通过后缀来区别输入文件类别

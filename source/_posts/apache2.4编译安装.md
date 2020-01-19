@@ -1,7 +1,7 @@
 ---
 title: apache2.4编译安装
 date: 2016-03-07 16:09:27
-categories: 中间件
+categories: 运维
 tags: Apache
 ---
 

@@ -4,7 +4,7 @@ tags:
   - redis
   - 集群
 date: 2016-06-12 11:15:09
-categories: 中间件
+categories: 运维
 ---
 
 # Redis常见集群实现方式

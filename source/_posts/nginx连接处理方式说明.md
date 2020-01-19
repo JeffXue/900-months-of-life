@@ -3,7 +3,7 @@ title: nginx连接处理方式说明
 tags:
   - Nginx
 date: 2016-03-22 15:24:16
-categories: 中间件
+categories: 运维
 ---
 
 # 连接处理方式

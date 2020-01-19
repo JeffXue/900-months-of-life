@@ -3,7 +3,7 @@ title: memcached1.4.25编译安装
 tags:
   - memcached
 date: 2016-04-19 10:40:58
-categories: 中间件
+categories: 运维
 ---
 
 # 概述

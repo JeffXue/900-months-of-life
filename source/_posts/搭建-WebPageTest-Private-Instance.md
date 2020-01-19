@@ -3,7 +3,7 @@ title: 搭建 WebPageTest Private Instance
 tags:
   - WebPageTest
 date: 2017-05-15 22:22:31
-categories: 前端性能
+categories: 性能
 ---
 
 

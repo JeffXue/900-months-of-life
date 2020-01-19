@@ -3,7 +3,7 @@ title: 如何隐藏你的Linux命令行历史
 tags:
   - Linux
 date: 2016-07-25 23:24:35
-categories: Linux
+categories: 运维
 ---
 
 

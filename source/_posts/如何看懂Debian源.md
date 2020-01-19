@@ -4,7 +4,7 @@ tags:
   - Debian
   - Linux
 date: 2016-07-21 23:14:46
-categories: Linux
+categories: 运维
 ---
 
 # /etc/apt/source.list

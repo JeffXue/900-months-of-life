@@ -3,7 +3,7 @@ title: nginx日志切割
 tags:
   - Nginx
 date: 2016-03-22 17:05:26
-categories: 中间件
+categories: 运维
 ---
 
 

@@ -3,7 +3,7 @@ title: nginx授权资源跨站点访问
 tags:
   - Nginx
 date: 2016-03-22 17:19:26
-categories: 中间件
+categories: 运维
 ---
 
 Access-Control-Allow-Origin 是html5 添加的新功能。基本上, 这是一个http的header, 用在返回资源的时候, 指定这个资源可以被哪些网域跨站访问。

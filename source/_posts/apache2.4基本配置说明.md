@@ -1,7 +1,7 @@
 ---
 title: apache2.4基本配置说明
 date: 2016-03-08 15:15:31
-categories: 中间件
+categories: 运维
 tags: Apache
 ---
 
